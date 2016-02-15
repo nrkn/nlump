@@ -67,7 +67,6 @@ Example output:
         "multiplayer": false
       }
     }
-    //...
   ]
 }
 ```
