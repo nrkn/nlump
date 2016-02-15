@@ -34,3 +34,40 @@ const result1 = nlump( lump )
 //a raw buffer, type specified
 const result2 = nlump( buffer, 'things' )
 ```
+
+Example output:
+
+```json
+{
+  "name": "THINGS",
+  "value": [
+    {
+      "x": 1056,
+      "y": -3616,
+      "angle": 90,
+      "type": 1,
+      "flags": {
+        "easy": true,
+        "medium": true,
+        "hard": true,
+        "deaf": false,
+        "multiplayer": false
+      }
+    },
+    {
+      "x": 1008,
+      "y": -3600,
+      "angle": 90,
+      "type": 2,
+      "flags": {
+        "easy": true,
+        "medium": true,
+        "hard": true,
+        "deaf": false,
+        "multiplayer": false
+      }
+    }
+    //...
+  ]
+}
+```
