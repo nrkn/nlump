@@ -9,7 +9,7 @@ out of it, try [nwad](https://github.com/nrkn/nwad)
 
 Currently read only, lump writers to come.
 
-Lump readers currently supported:
+### Lump readers currently supported
 
 * things
 * linedefs
@@ -25,6 +25,18 @@ Lump readers currently supported:
 * colormap
 * flat
 * picture (sprites, UI, walls etc.)
+
+### Not implemented yet
+
+Pull requests would be nice!
+
+* reject
+* blockmap
+* sound
+* music
+* demo
+* endoom
+* dmxgus
 
 ## Usage
 
