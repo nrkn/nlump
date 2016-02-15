@@ -1,6 +1,6 @@
 'use strict'
 
-const nodes = buffer => {
+module.exports = buffer => {
   const count = buffer.length / 28
   
   const getNode = ( buffer, offset ) => {

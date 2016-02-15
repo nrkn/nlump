@@ -2,7 +2,7 @@
 
 const size = 12
 
-const segs = buffer => {
+module.exports = buffer => {
   const count = buffer.length / size
   
   const getSeg = ( buffer, offs ) => {
