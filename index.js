@@ -1,3 +1,5 @@
+'use strict'
+
 const lumpTypes = [
   'things', 'linedefs', 'sidedefs', 'vertexes', 'segs', 'ssectors', 'nodes',
   'sectors', 'playpal', 'pnames', 'texture'
