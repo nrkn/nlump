@@ -1,3 +1,5 @@
+'use strict'
+
 module.exports = buffer => {
   const textureCount = buffer.readInt32LE( 0 )
   

@@ -1,3 +1,5 @@
+'use strict'
+
 const size = 30
 
 module.exports = buffer => {

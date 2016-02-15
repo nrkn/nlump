@@ -1,3 +1,5 @@
+'use strict'
+
 const nodes = buffer => {
   const count = buffer.length / 28
   

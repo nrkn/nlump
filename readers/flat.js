@@ -1,3 +1,5 @@
+'use strict'
+
 module.exports = buffer => {
   const width = 64
   const height = 64

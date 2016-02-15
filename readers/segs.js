@@ -1,3 +1,5 @@
+'use strict'
+
 const size = 12
 
 const segs = buffer => {
