@@ -25,7 +25,7 @@ const readBuffer = ( data, lumpType ) => {
 const readLump = lump => readBuffer( lump.data, lump.name )
 
 const read = ( arg1, arg2 ) => {
-  if( arg1 && arg1.name && arg1.lump ){
+  if( arg1 && arg1.name && arg1.data ){
     return readLump( arg1 )
   } else if( arg1 && arg2 ){
     return readBuffer( arg1, arg2 )
