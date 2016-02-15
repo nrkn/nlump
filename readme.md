@@ -31,10 +31,10 @@ Lump readers currently supported:
 ```javascript
 const nlump = require( 'nlump' )
 
-//a lump as read by nwad
+//you can pass in a lump as produced by [nwad](https://github.com/nrkn/nwad)
 const result1 = nlump( lump )
 
-//a raw buffer, type specified
+//or a raw buffer, with the lump type specified
 const result2 = nlump( buffer, 'things' )
 ```
 
