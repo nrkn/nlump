@@ -2,7 +2,7 @@
 
 const lumpTypes = [
   'things', 'linedefs', 'sidedefs', 'vertexes', 'segs', 'ssectors', 'nodes',
-  'sectors', 'playpal', 'pnames', 'texture'
+  'sectors', 'playpal', 'pnames', 'texture', 'colormap'
 ]
 
 const readers = lumpTypes.reduce( ( result, lumpType ) => {
