@@ -22,6 +22,9 @@ Lump readers currently supported:
 * playpal
 * pnames
 * texture
+* colormap
+* flat
+* picture (sprites, UI, walls etc.)
 
 ## Usage
 
