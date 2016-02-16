@@ -24,8 +24,7 @@ module.exports = buffer => {
     let rowStart = 0
     
     while( rowStart !== 255 ){
-      rowStart = buffer.readUInt8( offset )
-      
+      rowStart = buffer.readUInt8( offset )      
       offset++
       
       if( rowStart === 255 ) break;

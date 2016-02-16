@@ -1,6 +1,6 @@
 {
   "name": "nlump",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Work with lumps from a WAD file as used by Doom et al",
   "main": "index.js",
   "repository": {

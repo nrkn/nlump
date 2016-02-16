@@ -1,7 +1,9 @@
 'use strict'
 
+const size = 28
+
 module.exports = buffer => {
-  const count = buffer.length / 28
+  const count = buffer.length / size
   
   const getNode = ( buffer, offset ) => {
     const x = buffer.readInt16LE( offset )
@@ -34,7 +36,7 @@ module.exports = buffer => {
   const nodes = []
   
   for( var i = 0; i < count; i++ ){
-    nodes.push( getNode( buffer, i * 28 ) )
+    nodes.push( getNode( buffer, i * size ) )
   }
   
   return nodes    
