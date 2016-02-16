@@ -21,6 +21,7 @@ Currently read only, lump writers to come.
 * ssectors
 * nodes
 * sectors
+* blockmap
 * playpal
 * pnames
 * texture
@@ -33,7 +34,6 @@ Currently read only, lump writers to come.
 Pull requests would be nice!
 
 * reject
-* blockmap
 * sound
 * music
 * demo
