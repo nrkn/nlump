@@ -1,11 +1,8 @@
 {
   "name": "nlump",
-  "version": "0.0.7",
+  "version": "0.1.0",
   "description": "Work with lumps from a WAD file as used by Doom et al",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git://github.com/nrkn/nlump.git"

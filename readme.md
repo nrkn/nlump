@@ -45,11 +45,8 @@ Pull requests would be nice!
 ```javascript
 const nlump = require( 'nlump' )
 
-//you can pass in a lump as produced by nwad: https://github.com/nrkn/nwad
-const result1 = nlump( lump )
-
-//or a raw buffer, with the lump type specified
-const result2 = nlump( buffer, 'things' )
+//if you have a lump from nwad, the buffer is stored in the 'data' property
+const result = nlump( buffer, 'things' )
 ```
 
 Example output:

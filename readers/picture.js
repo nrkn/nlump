@@ -7,10 +7,9 @@ module.exports = buffer => {
   const top = buffer.readInt16LE( 6 )
   
   const columnOffsets = []
+  const columns = []
   
   let offset = 8
-  
-  const columns = []
   
   for( var i = 0; i < width; i++ ){
     columnOffsets.push( buffer.readInt32LE( offset ) )
@@ -38,10 +37,8 @@ module.exports = buffer => {
       offset++
       
       for( var j = 0; j < pixelCount; j++ ){
-        let pixel = buffer.readUInt8( offset )
+        columns[ i ][ j + rowStart ] = buffer.readUInt8( offset )
         offset++
-        
-        columns[ i ][ j + rowStart ] = pixel
       }
       
       //skip dummy byte
