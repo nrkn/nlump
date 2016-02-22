@@ -18,6 +18,8 @@ const read = ( data, lumpType ) => {
   
   if( reader ){
     return reader( data )
+  } else {
+    throw new Error( 'Unsupported lump type ' + lumpType )
   }  
 }
 
