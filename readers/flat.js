@@ -12,5 +12,5 @@ module.exports = buffer => {
     pixels.push( buffer.readUInt8( i ) )
   }
   
-  return { width, height, pixels }
+  return pixels
 }
