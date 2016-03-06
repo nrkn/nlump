@@ -11,7 +11,7 @@ const readers = {
   'sectors': require( './readers/sectors' ),
   'playpal': require( './readers/playpal' ),
   'pnames': require( './readers/pnames' ),
-  'texture': require( '.readers/texture' ),
+  'texture': require( './readers/texture' ),
   'colormap': require( './readers/colormap' ),
   'flat': require( './readers/flat' ),
   'picture': require( './readers/picture' ),
