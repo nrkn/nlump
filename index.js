@@ -1,16 +1,23 @@
 'use strict'
 
-const lumpTypes = [
-  'things', 'linedefs', 'sidedefs', 'vertexes', 'segs', 'ssectors', 'nodes',
-  'sectors', 'playpal', 'pnames', 'texture', 'colormap', 'flat', 'picture',
-  'blockmap', 'raw'
-]
-
-const readers = lumpTypes.reduce( ( result, lumpType ) => {
-  result[ lumpType ] = require( './readers/' + lumpType )  
-  
-  return result
-}, {} )
+const readers = {
+  'things': require( './readers/things' ),
+  'linedefs': require( './readers/linedefs' ),
+  'sidedefs': require( './readers/sidedefs' ),
+  'vertexes': require( './readers/vertexes' ),
+  'segs': require( './readers/segs' ),
+  'ssectors': require( './readers/ssectors' ),
+  'nodes': require( './readers/nodes' ),
+  'sectors': require( './readers/sectors' ),
+  'playpal': require( './readers/playpal' ),
+  'pnames': require( './readers/pnames' ),
+  'texture': require( '.readers/texture' ),
+  'colormap': require( './readers/colormap' ),
+  'flat': require( './readers/flat' ),
+  'picture': require( './readers/picture' ),
+  'blockmap': require( './readers/blockmap' ),
+  'raw': require( './readers/raw' )
+}
 
 const read = ( data, lumpType ) => {
   const name = lumpType.toLowerCase().trim()
