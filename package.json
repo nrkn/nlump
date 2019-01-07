@@ -1,8 +1,19 @@
 {
   "name": "nlump",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "description": "Work with lumps from a WAD file as used by Doom et al",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc && mocha ./dist/test",
+    "coverage": "tsc && nyc --reporter=html --reporter=text mocha ./dist/test"
+  },
+  "nyc": {
+    "exclude": [
+      "./dist/test"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/nrkn/nlump.git"
@@ -18,9 +29,9 @@
     "url": "https://github.com/nrkn/nlump/issues"
   },
   "homepage": "https://github.com/nrkn/nlump#readme",
-  "browserify": {
-    "transform": [
-      "babelify"
-    ]
+  "devDependencies": {
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.12.12",
+    "mocha": "^5.2.0"
   }
 }

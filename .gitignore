@@ -1,3 +1,9 @@
+src/sandbox
+dist/sandbox
+
+# VS Code
+.vscode
+
 # Logs
 logs
 *.log
